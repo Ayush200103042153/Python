@@ -1,831 +1,839 @@
-# #PYHTON PRACTICE
+#PYHTON PRACTICE
 
 
-# #VARIABLES
+#VARIABLES
 
 
-# x=1
-# y="Ayush"
-# print(x)
-# print(y)
+x=1
+y="Ayush"
+print(x)
+print(y)
 
 
-# #MULTIPLE VARIABLES
+#MULTIPLE VARIABLES
 
 
-# x,y,z = "Ayush","Ayush1","Ayush2"
-# print(x,y,z)
+x,y,z = "Ayush","Ayush1","Ayush2"
+print(x,y,z)
 
 
-# #GLOBAL VARIABLES
+#GLOBAL VARIABLES
 
 
-# a="Ayush"
+a="Ayush"
 
-# def myfunc():
-#     a="Ayush1"
-#     print("Python is "+a)
+def myfunc():
+    a="Ayush1"
+    print("Python is "+a)
 
-#     myfunc()
-#     print("Python is"+a)
-
-
-# #DATATYPES
+    myfunc()
+    print("Python is"+a)
 
 
-# #Text Str 
-# #Numeric int,float 12,2.5
-# #sequence list,tuple
-# #boolean bool
+#DATATYPES
 
 
-# #CASTING
+#Text Str 
+#Numeric int,float 12,2.5
+#sequence list,tuple
+#boolean bool
 
 
-# x=int(1) #output=1   
-# x=int(2.8) #output=2  
-# x=int("3") #output=3
+#CASTING
 
 
-# #STRINGS
+x=int(1) #output=1   
+x=int(2.8) #output=2  
+x=int("3") #output=3
 
 
-# txt="Ayush in game name is Reflexgod"
-# print(txt)
+#STRINGS
 
 
-# #BOOLEAN
+txt="Ayush in game name is Reflexgod"
+print(txt)
 
 
-# a=200
-# b=33
-# if b>a:
-#     print("b is greater than than a")
-# else:
-#      print("a is greater than than b")
+#BOOLEAN
 
 
-# #OPERATOR
+a=200
+b=33
+if b>a:
+    print("b is greater than than a")
+else:
+     print("a is greater than than b")
 
 
-# # +	    Addition	    x + y	
-# # -	    Subtraction	    x - y	
-# # *	    Multiplication	x * y	
-# # /	    Division	    x / y	
-# # %	    Modulus	        x % y	
-# # **	Exponentiation	x ** y	
-# # //	Floor division	x // y
+#OPERATOR
 
 
-# #LISTS
+# +	    Addition	    x + y	
+# -	    Subtraction	    x - y	
+# *	    Multiplication	x * y	
+# /	    Division	    x / y	
+# %	    Modulus	        x % y	
+# **	Exponentiation	x ** y	
+# //	Floor division	x // y
 
 
-# thislist=["Ayush","33clutch","reflexgod"]
-# print(thislist)
+#LISTS
+
+
+thislist=["Ayush","33clutch","reflexgod"]
+print(thislist)
     
-# #changelist
-# thislist.insert(2,"crusher")
-# print(thislist)
+#changelist
+thislist.insert(2,"crusher")
+print(thislist)
 
-# #additem
-# thislist.append("Orange")
-# print(thislist)
+#additem
+thislist.append("Orange")
+print(thislist)
 
-# tropical=["mango","apple"]
-# thislist.extend(tropical)
-# print(thislist)
+tropical=["mango","apple"]
+thislist.extend(tropical)
+print(thislist)
 
-# #remove
-# thislist.remove("banana")
-# print(thislist)
+#remove
+thislist.remove("banana")
+print(thislist)
 
-# #sortlist
-# thislist.sort()
-# print(thislist)
+#sortlist
+thislist.sort()
+print(thislist)
 
-# #joinlist
-# list3=thislist + tropical
-# print(list3)
-
-
-# #TUPLE
+#joinlist
+list3=thislist + tropical
+print(list3)
 
 
-# thistuple=("Ayush","33clutch","reflexgod","Ramesh")
-# print(thistuple)
-
-# #Slicing
-# tuple2=thistuple[1:3]
-# tuple3=thistuple[:2] #Blank represents 0 here
-
-# #jointuple
-# tuple2=("bgmi","pubg")
-# tuple3=thistuple  + tuple2
-# print(tuple3)
-
-# #count
-# #number of time elements repeated
+#TUPLE
 
 
-# #SETS
+thistuple=("Ayush","33clutch","reflexgod","Ramesh")
+print(thistuple)
+
+#Slicing
+tuple2=thistuple[1:3]
+tuple3=thistuple[:2] #Blank represents 0 here
+
+#jointuple
+tuple2=("bgmi","pubg")
+tuple3=thistuple  + tuple2
+print(tuple3)
+
+#count
+#number of time elements repeated
 
 
-# thisset={"apple","banana","cherry"}
-# print(thisset)
-
-# #accessset
-# thisset={"apple","banana","cherry"}
-# for x in thisset:
-#  print(x)
-
-# #add
-# thisset.add("orange")
-# print(thisset)
-
-# #remove
-# thisset.remove("banana")
-# thisset.pop() #Delete last item
-# print(thisset)
-
-# #join
-# set1={"a","b","c"}
-# set2={1,2,3}
-# set3=set1.union(set2)
-# print(set3)
-
-# #update
-# #intersaction
-# #difference
+#SETS
 
 
-# #DICTIONARY
+thisset={"apple","banana","cherry"}
+print(thisset)
+
+#accessset
+thisset={"apple","banana","cherry"}
+for x in thisset:
+ print(x)
+
+#add
+thisset.add("orange")
+print(thisset)
+
+#remove
+thisset.remove("banana")
+thisset.pop() #Delete last item
+print(thisset)
+
+#join
+set1={"a","b","c"}
+set2={1,2,3}
+set3=set1.union(set2)
+print(set3)
+
+#update
+#intersaction
+#difference
 
 
-# thisdict={
-#     "brand":"Ford", #key:value
-#     "model":"Mustang",
-#     "year":2023,
-# }
-# print(thisdict)
-
-# #remove
-# thisdict.pop("model")
-# print(thisdict)
-
-# #Nested Dictionary
-# myfamily = {
-#   "child1" : {
-#     "name" : "Ayush",
-#     "year" : 2002
-#   },
-#   "child2" : {
-#     "name" : "Aayush",
-#     "year" : 2001
-#   },
-#   "child3" : {
-#     "name" : "Parshwa",
-#     "year" : 2003
-#   }
-# }
-# print(myfamily)
+#DICTIONARY
 
 
-# #IF...ELSE
+thisdict={
+    "brand":"Ford", #key:value
+    "model":"Mustang",
+    "year":2023,
+}
+print(thisdict)
+
+#remove
+thisdict.pop("model")
+print(thisdict)
+
+#Nested Dictionary
+myfamily = {
+  "child1" : {
+    "name" : "Ayush",
+    "year" : 2002
+  },
+  "child2" : {
+    "name" : "Aayush",
+    "year" : 2001
+  },
+  "child3" : {
+    "name" : "Parshwa",
+    "year" : 2003
+  }
+}
+print(myfamily)
 
 
-# a = 200
-# b = 33
-# if b > a:
-#   print("b is greater than a")
-
-# #print("a") if a>b else print("b")
-
-# elif a == b:
-#   print("a and b are equal")
-# else:
-#   print("a is greater than b")
+#IF...ELSE
 
 
-# #WHILE LOOP
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+
+#print("a") if a>b else print("b")
+
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
 
 
-# i = 1
-# while i < 6:
-#   print(i)
-#   if i == 3:
-#     break   #breakstatement
-#   i =i + 1
+#WHILE LOOP
 
 
-# #FOR LOOP
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break   #breakstatement
+  i =i + 1
 
 
-# #continue
-# fruits = ["apple", "banana", "cherry"]
-# for x in fruits:
-#   if x == "banana":
-#     continue
-#   print(x)
+#FOR LOOP
 
 
-# #FUNCTION
+#continue
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
 
 
-# def my_function(fname):
-#   print(fname + " Patel")
-
-# my_function("Ayush")
-# my_function("Clutch")
-# my_function("Reflexgod")
-
-# #args
-# def my_function(*x):
-#   print("My Name is " + x[2])
-
-# my_function("Ayush", "Clutch", "Reflexgod")
-
-# #kwargs
-# def my_function(**x):
-#   print("My Last Name is " + x["lname"])
-
-# my_function(fname = "Soni", lname = "Patel")
-
-# #ReturnValues
-# def ans(x):
-#   return 5 * x
-
-# print(ans(3))
-# print(ans(5))
-# print(ans(9))
+#FUNCTION
 
 
-# #RECURSION FUNCTION
+def my_function(fname):
+  print(fname + " Patel")
+
+my_function("Ayush")
+my_function("Clutch")
+my_function("Reflexgod")
+
+#args
+def my_function(*x):
+  print("My Name is " + x[2])
+
+my_function("Ayush", "Clutch", "Reflexgod")
+
+#kwargs
+def my_function(**x):
+  print("My Last Name is " + x["lname"])
+
+my_function(fname = "Soni", lname = "Patel")
+
+#ReturnValues
+def ans(x):
+  return 5 * x
+
+print(ans(3))
+print(ans(5))
+print(ans(9))
 
 
-# def recursion(k):
-#   if(k > 0):
-#     result = k + recursion(k - 1)
-#     print(result)
-#   else:
-#     result = 0
-#   return result
+#RECURSION FUNCTION
 
-# print("\n\nRecursion Example Results")
-# recursion(6)
 
-# #Factorial by recursion
-# def factorial(n):
-#     if(n==0 or n==1):
-#         return 1
-#     else:
-#         return n*factorial(n-1)
+def recursion(k):
+  if(k > 0):
+    result = k + recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+recursion(6)
+
+#Factorial by recursion
+def factorial(n):
+    if(n==0 or n==1):
+        return 1
+    else:
+        return n*factorial(n-1)
     
-# print(factorial(3))
-# print(factorial(4))
-# print(factorial(5))
+print(factorial(3))
+print(factorial(4))
+print(factorial(5))
 
 
-# #FIBONACCI
+#FIBONACCI
 
 
-# def fibonacci(n):
-#     if n <= 1:
-#         return n
-#     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
-# # Example usage
-# n_terms = 10
-# for i in range(n_terms):
-#     print(fibonacci(i))
+# Example usage
+n_terms = 10
+for i in range(n_terms):
+    print(fibonacci(i))
 
 
-# #ARRAY
+#ARRAY
 
 
-# #LAMBDA
+#LAMBDA
 
 
-# def myfunc(n):
-#   return lambda a : a * n
+def myfunc(n):
+  return lambda a : a * n
 
-# mydoubler = myfunc(2)
-# mytripler = myfunc(3)
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
 
-# print(mydoubler(11))
-# print(mytripler(11))
+print(mydoubler(11))
+print(mytripler(11))
 
 
-# #CLASS
+#CLASS
 
 
-# #init
-# class Person:
-#   def __init__(self, name, age):
-#     self.name = name
-#     self.age = age
+#init
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-# p1 = Person("Ayush", 21)
+p1 = Person("Ayush", 21)
 
-# print(p1.name)
-# print(p1.age)
+print(p1.name)
+print(p1.age)
 
-# #str
-# class Person:
-#   def __init__(self, name, age):
-#     self.name = name
-#     self.age = age
+#str
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-#   def __str__(self):
-#     return "Name={self.name}(age={self.age})"
+  def __str__(self):
+    return "Name={self.name}(age={self.age})"
 
-# p1 = Person("Ayush", 21)
+p1 = Person("Ayush", 21)
 
-# print(p1)
+print(p1)
 
-# # object method
-# class Person:
-#   def __init__(self, name, age):
-#     self.name = name
-#     self.age = age
+# object method
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-#   def myfunc(self):
-#     print("Hello my name is " + self.name)
+  def myfunc(self):
+    print("Hello my name is " + self.name)
 
-# p1 = Person("Ayush", 21)
-# p1.myfunc()
+p1 = Person("Ayush", 21)
+p1.myfunc()
 
 
-# #INHERITANCE
+#INHERITANCE
 
 
-# #ParentClass
-# class Person:
-#   def __init__(self, fname, lname):
-#     self.firstname = fname
-#     self.lastname = lname
+#ParentClass
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-#   def printname(self):
-#     print(self.firstname, self.lastname)
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-# x = Person("Ayush", "Patel")
-# x.printname()
+x = Person("Ayush", "Patel")
+x.printname()
 
-# #ChildClass
-# class Person:
-#   def __init__(self, fname, lname):
-#     self.firstname = fname
-#     self.lastname = lname
+#ChildClass
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-#   def printname(self):
-#     print(self.firstname, self.lastname)
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-# class Student(Person):
-#   pass
-# x = Student("Ayush", "Patel")
-# x.printname()
+class Student(Person):
+  pass
+x = Student("Ayush", "Patel")
+x.printname()
 
-# #Super..
-# class Person:
-#   def __init__(self, fname, lname):
-#     self.firstname = fname
-#     self.lastname = lname
+#Super..
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-#   def printname(self):
-#     print(self.firstname, self.lastname)
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-# class Student(Person):
-#   def __init__(self, fname, lname):
-#     super().__init__(fname, lname)
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
 
-# x = Student("Ayush", "Patel")
-# x.printname()
+x = Student("Ayush", "Patel")
+x.printname()
 
 
-# #ITERATOR
+#ITERATOR
 
 
-# class MyNumbers:
-#   def __iter__(self):
-#     self.a = 1
-#     return self
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
 
-#   def __next__(self):
-#     x = self.a
-#     self.a =self.a + 1
-#     return x
+  def __next__(self):
+    x = self.a
+    self.a =self.a + 1
+    return x
 
-# myclass = MyNumbers()
-# myiter = iter(myclass)
+myclass = MyNumbers()
+myiter = iter(myclass)
 
-# print(next(myiter))
-# print(next(myiter))
-# print(next(myiter))
-# print(next(myiter))
-# print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
 
-# #StopIterator
-# class MyNumbers:
-#   def __iter__(self):
-#     self.a = 1
-#     return self
+#StopIterator
+class MyNumbers:
+  def __iter__(self):
+    self.a = 1
+    return self
 
-#   def __next__(self):
-#     if self.a <= 20:
-#       x = self.a
-#       self.a = self.a + 1
-#       return x
-#     else:
-#       raise StopIteration
+  def __next__(self):
+    if self.a <= 20:
+      x = self.a
+      self.a = self.a + 1
+      return x
+    else:
+      raise StopIteration
 
-# myclass = MyNumbers()
-# myiter = iter(myclass)
+myclass = MyNumbers()
+myiter = iter(myclass)
 
-# for x in myiter:
-#   print(x)
+for x in myiter:
+  print(x)
 
 
-# #POLYMORPHISM
+#POLYMORPHISM
 
 
-# #ClassPolymorphism
-# class Car:
-#   def __init__(self, brand, model):
-#     self.brand = brand
-#     self.model = model
+#ClassPolymorphism
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-#   def move(self):
-#     print("Drive!")
+  def move(self):
+    print("Drive!")
 
-# class Boat:
-#   def __init__(self, brand, model):
-#     self.brand = brand
-#     self.model = model
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-#   def move(self):
-#     print("Sail!")
+  def move(self):
+    print("Sail!")
 
-# class Plane:
-#   def __init__(self, brand, model):
-#     self.brand = brand
-#     self.model = model
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-#   def move(self):
-#     print("Fly!")
+  def move(self):
+    print("Fly!")
 
-# car1 = Car("Ford", "Mustang")       #Create a Car class
-# boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
-# plane1 = Plane("Boeing", "747")     #Create a Plane class
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
 
-# for x in (car1, boat1, plane1):
-#   x.move()
+for x in (car1, boat1, plane1):
+  x.move()
 
-# #InheritanceClassPolymorphism
-# class Vehicle:
-#   def __init__(self, brand, model):
-#     self.brand = brand
-#     self.model = model
+#InheritanceClassPolymorphism
+class Vehicle:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
 
-#   def move(self):
-#     print("Move!")
+  def move(self):
+    print("Move!")
 
-# class Car(Vehicle):
-#   pass
+class Car(Vehicle):
+  pass
 
-# class Boat(Vehicle):
-#   def move(self):
-#     print("Sail!")
+class Boat(Vehicle):
+  def move(self):
+    print("Sail!")
 
-# class Plane(Vehicle):
-#   def move(self):
-#     print("Fly!")
+class Plane(Vehicle):
+  def move(self):
+    print("Fly!")
 
-# car1 = Car("Ford", "Mustang") #Create a Car object
-# boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
-# plane1 = Plane("Boeing", "747") #Create a Plane object
+car1 = Car("Ford", "Mustang") #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747") #Create a Plane object
 
-# for x in (car1, boat1, plane1):
-#   print(x.brand)
-#   print(x.model)
-#   x.move()
+for x in (car1, boat1, plane1):
+  print(x.brand)
+  print(x.model)
+  x.move()
 
 
-# #GLOBAL
+#GLOBAL
 
 
-# #Global represents a static value assigned to the variable
-# #Eg: global x
-# #    x=300
+#Global represents a static value assigned to the variable
+#Eg: global x
+#    x=300
 
 
-# # MODULE
+# MODULE
 
 
-# from mymodule import greeting  
-# greeting("Ayush")
+from mymodule import greeting  
+greeting("Ayush")
 
-# from KBC import display_question
-# from KBC import kbc_game
-# print("Welcome to the KBC Game!")
-# kbc_game()
+from KBC import display_question
+from KBC import kbc_game
+print("Welcome to the KBC Game!")
+kbc_game()
 
-# from mymodule import mybio
-# a = mybio
-# print(a)
+from mymodule import mybio
+a = mybio
+print(a)
 
-# from mymodule import add
-# from mymodule import sub
-# print(add(1,2))
-# print(sub(1,2))
+from mymodule import add
+from mymodule import sub
+print(add(1,2))
+print(sub(1,2))
 
 # import pandas
 # pandas.read_csv()
 
-# import math
-# result=math.sqrt(9)*math.pi
-# print(result)
+import math
+result=math.sqrt(9)*math.pi
+print(result)
 
-# print(dir(math))
+print(dir(math))
 
-# #if __name__=="__main__" in Module
-# from mymodule import welcome
-# a = welcome
-# print(a)
+#if __name__=="__main__" in Module
+from mymodule import welcome
+a = welcome
+print(a)
 
-# #RE-NAMING A MODULE
-# #.
-# #.
-# #.
-
-
-# #DATETIME
+#RE-NAMING A MODULE
+#.
+#.
+#.
 
 
-# #%a	Weekday, short version	Wed	
-# #%A	Weekday, full version	Wednesday	
-# #%w	Weekday as a number 0-6, 0 is Sunday	3	
-# #%d	Day of month 01-31	31	
-# #%b	Month name, short version	Dec	
-# #%B	Month name, full version	December	
-# #%m	Month as a number 01-12	12	
-# #%y	Year, short version, without century	18	
-# #%Y	Year, full version	2018	
-# #%H	Hour 00-23	17	
-# #%I	Hour 00-12	05	
-# #%p	AM/PM	PM	
-# #%M	Minute 00-59	41	
-# #%S	Second 00-59	08	
-# #%f	Microsecond 000000-999999	548513	
-# #%z	UTC offset	+0100	
-# #%Z	Timezone	CST	
-# #%j	Day number of year 001-366	365	
-# #%U	Week number of year, Sunday as the first day of week, 00-53	52	
-# #%W	Week number of year, Monday as the first day of week, 00-53	52	
-# #%c	Local version of date and time	Mon Dec 31 17:41:00 2018	
-# #%C	Century	20	
-# #%x	Local version of date	12/31/18	
-# #%X	Local version of time	17:41:00	
-# #%%	A % character	%	
-# #%G	ISO 8601 year	2018	
-# #%u	ISO 8601 weekday (1-7)	1	
-# #%V	ISO 8601 weeknumber (01-53)	01
-
-# import datetime
-# x=datetime.datetime.now()
-# print(x)
-# print(x.year)
-# print(x.strftime("%A"))
-
-# import time
-# t=time.strftime('%H:%M:%S')
-# hour=int(time.strftime('%H'))
-# hour=int(input("Enter hour: "))
-# print(hour)
-# if(hour>=0 and hour<12):
-#     print("Good Morning Sir!")
-# elif(hour>=12 and hour<17):
-#     print("Good Afternoon Sir!")
-# elif(hour>=17 and hour<0):
-#     print("Good Night Sir!")
+#DATETIME
 
 
-# #MATH
+#%a	Weekday, short version	Wed	
+#%A	Weekday, full version	Wednesday	
+#%w	Weekday as a number 0-6, 0 is Sunday	3	
+#%d	Day of month 01-31	31	
+#%b	Month name, short version	Dec	
+#%B	Month name, full version	December	
+#%m	Month as a number 01-12	12	
+#%y	Year, short version, without century	18	
+#%Y	Year, full version	2018	
+#%H	Hour 00-23	17	
+#%I	Hour 00-12	05	
+#%p	AM/PM	PM	
+#%M	Minute 00-59	41	
+#%S	Second 00-59	08	
+#%f	Microsecond 000000-999999	548513	
+#%z	UTC offset	+0100	
+#%Z	Timezone	CST	
+#%j	Day number of year 001-366	365	
+#%U	Week number of year, Sunday as the first day of week, 00-53	52	
+#%W	Week number of year, Monday as the first day of week, 00-53	52	
+#%c	Local version of date and time	Mon Dec 31 17:41:00 2018	
+#%C	Century	20	
+#%x	Local version of date	12/31/18	
+#%X	Local version of time	17:41:00	
+#%%	A % character	%	
+#%G	ISO 8601 year	2018	
+#%u	ISO 8601 weekday (1-7)	1	
+#%V	ISO 8601 weeknumber (01-53)	01
+
+import datetime
+x=datetime.datetime.now()
+print(x)
+print(x.year)
+print(x.strftime("%A"))
+
+import time
+t=time.strftime('%H:%M:%S')
+hour=int(time.strftime('%H'))
+hour=int(input("Enter hour: "))
+print(hour)
+if(hour>=0 and hour<12):
+    print("Good Morning Sir!")
+elif(hour>=12 and hour<17):
+    print("Good Afternoon Sir!")
+elif(hour>=17 and hour<0):
+    print("Good Night Sir!")
 
 
-# import math
-# x=math.cbrt(64)
-# y=math.sqrt(64)
-# z=pow(4,3)
-# a=math.ceil(1.8)
-# b=math.floor(1.8)
-# c=math.pi
-# d=min(5,10,25)
-# e=max(5,10,25)
-# print(x)
-# print(y)
-# print(z)
-# print(a)
-# print(b)
-# print(c)
-# print(d)
-# print(e)
+#MATH
 
 
-# #JSON
+import math
+x=math.cbrt(64)
+y=math.sqrt(64)
+z=pow(4,3)
+a=math.ceil(1.8)
+b=math.floor(1.8)
+c=math.pi
+d=min(5,10,25)
+e=max(5,10,25)
+print(x)
+print(y)
+print(z)
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
 
 
-# import json
-# x='{"name":"Ayush","age":21}'
-# y=json.loads(x)
-# y=json.dumps(x)
-# print(y)
-
-# print(json.dumps({"name": "Ayush", "age": 21}))
-# print(json.dumps(["Ayush", "Clutch"]))
-# print(json.dumps(("Ayush", "Clutch")))
-# print(json.dumps("hello"))
-# print(json.dumps(42))
-# print(json.dumps(31.76))
-# print(json.dumps(True))
-# print(json.dumps(False))
-# print(json.dumps(None))
+#JSON
 
 
-# # REGULAREXPRESSION
+import json
+x='{"name":"Ayush","age":21}'
+y=json.loads(x)
+y=json.dumps(x)
+print(y)
+
+print(json.dumps({"name": "Ayush", "age": 21}))
+print(json.dumps(["Ayush", "Clutch"]))
+print(json.dumps(("Ayush", "Clutch")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))
 
 
-# #search :It see the string and check whether the word is there or not
-# #split	:Returns a list where the string has been split at each match
-# #sub	  :Replaces one or many matches with a string
-# #[]	A set of characters	"[a-m]"	
-# #\	Signals a special sequence (can also be used to escape special characters)	"\d"	
-# #.	Any character (except newline character)	"he..o"	
-# #^	Starts with	"^hello"	
-# #$	Ends with	"planet$"	
-# #*	Zero or more occurrences	"he.*o"	
-# #+	One or more occurrences	"he.+o"	
-# #?	Zero or one occurrences	"he.?o"	
-# #{}	Exactly the specified number of occurrences	"he.{2}o"	
-# #|	Either or	"falls|stays"
+# REGULAREXPRESSION
 
 
-# import re
-# txt="The rain in Spain"
-# x=re.search("^The.*Spain$",txt)
-
-# if x:
-#     print("YES! We have a match!")
-# else:
-#     print("No match!")
-
-# txt = "The rain in Spain"
-# x = re.findall("ai", txt)
-# print(x)
-
-
-# #PiP
+#search :It see the string and check whether the word is there or not
+#split	:Returns a list where the string has been split at each match
+#sub	  :Replaces one or many matches with a string
+#[]	A set of characters	"[a-m]"	
+#\	Signals a special sequence (can also be used to escape special characters)	"\d"	
+#.	Any character (except newline character)	"he..o"	
+#^	Starts with	"^hello"	
+#$	Ends with	"planet$"	
+#*	Zero or more occurrences	"he.*o"	
+#+	One or more occurrences	"he.+o"	
+#?	Zero or one occurrences	"he.?o"	
+#{}	Exactly the specified number of occurrences	"he.{2}o"	
+#|	Either or	"falls|stays"
 
 
-# import camelcase
-# c=camelcase.CamelCase()
-# txt="Ayush"
-# print(c.hump(txt))
+import re
+txt="The rain in Spain"
+x=re.search("^The.*Spain$",txt)
+
+if x:
+    print("YES! We have a match!")
+else:
+    print("No match!")
+
+txt = "The rain in Spain"
+x = re.findall("ai", txt)
+print(x)
 
 
-# #EXCEPTION HANDLING
+#PiP
 
 
-# #Single Exception
-# #Example1
-# x=10
-# try:
-#     print(x)
-# except:
-#     print("An exception occured")
-
-# #Example2
-# a=input("Enter the number: ")
-# print(f"Multiplication table of {a} is:")
-# try:
-#  for i in range(1,11):
-#     print(f"{int(a)}X{i}={int(a)*i}")
-
-# except Exception as e:
-#  print("Invalid Input!")
-
-# #ManyException
-# #Example1
-# x=10
-# try:
-#     print(x)
-# except NameError:   #If try block raise the error
-#     print("Variable x is not defined")
-# except:             #For other errors
-#     print("Something else went wrong")
-
-# #Example2
-# try:
-#     num = int(input("Enter an integer: "))
-#     a=[6,3]
-#     print(a[num])
-# except ValueError:
-#     print("Number entered is not an integer")
-# except IndexError:
-#     print("Index Error")        
-
-# #Else
-# try:
-#     print("Ayush")
-# except:
-#     print("Something went wrong")
-# else:
-#     print("Nothing went wrong")     
-
-# #Finally
-# #The finally block, if specified, will be executed regardless if the try block raises an error or not.
-# try:
-#     print("Ayush")
-# except:
-#     print("Something went wrong")
-# finally:
-#     print("The try except is finished")
-
-# #Raise Error
-# x=int(input("Enter the number: "))
-# if x<0:
-#     raise Exception("Sorry, no numbers below zero")
-
-# x = "Ayush"
-# if not type(x) is int:
-#   raise TypeError("Only integers are allowed")
+import camelcase
+c=camelcase.CamelCase()
+txt="Ayush"
+print(c.hump(txt))
 
 
-# #USERINPUT
+#EXCEPTION HANDLING
 
 
-# #Multiplication Table
-# a=input("Enter the number: ")
-# print(f"Multiplication table of {a} is:")
+#Single Exception
+#Example1
+x=10
+try:
+    print(x)
+except:
+    print("An exception occured")
 
-# for i in range(1,11):
-#     print(f"{int(a)}X{i}={int(a)*i}")
+#Example2
+a=input("Enter the number: ")
+print(f"Multiplication table of {a} is:")
+try:
+ for i in range(1,11):
+    print(f"{int(a)}X{i}={int(a)*i}")
+
+except Exception as e:
+ print("Invalid Input!")
+
+#ManyException
+#Example1
+x=10
+try:
+    print(x)
+except NameError:   #If try block raise the error
+    print("Variable x is not defined")
+except:             #For other errors
+    print("Something else went wrong")
+
+#Example2
+try:
+    num = int(input("Enter an integer: "))
+    a=[6,3]
+    print(a[num])
+except ValueError:
+    print("Number entered is not an integer")
+except IndexError:
+    print("Index Error")        
+
+#Else
+try:
+    print("Ayush")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")     
+
+#Finally
+#The finally block, if specified, will be executed regardless if the try block raises an error or not.
+try:
+    print("Ayush")
+except:
+    print("Something went wrong")
+finally:
+    print("The try except is finished")
+
+#Raise Error
+x=int(input("Enter the number: "))
+if x<0:
+    raise Exception("Sorry, no numbers below zero")
+
+x = "Ayush"
+if not type(x) is int:
+  raise TypeError("Only integers are allowed")
+
+
+#USERINPUT
+
+
+#Multiplication Table
+a=input("Enter the number: ")
+print(f"Multiplication table of {a} is:")
+
+for i in range(1,11):
+    print(f"{int(a)}X{i}={int(a)*i}")
     
-# username=input("Enter username:")
-# print("Usrename is:"+username)
+username=input("Enter username:")
+print("Usrename is:"+username)
 
 
-# #STRING FORMATING
+#STRING FORMATING
 
 
-# qua=3
-# no=23
-# price=49
-# myorder="I want {} pieces of item number {} for {:.2f} dollars"
-# myorder="I want {0} pieces of item number {1} for {2} dollars"
-# print(myorder.format(qua,no,price))
+qua=3
+no=23
+price=49
+myorder="I want {} pieces of item number {} for {:.2f} dollars"
+myorder="I want {0} pieces of item number {1} for {2} dollars"
+print(myorder.format(qua,no,price))
 
 
-# #DOCSTRING
+#DOCSTRING
 
 
-# def square(a):
-# #  '''Takes in a number n, returns the square of n'''
-#   print(a**2)
-# square(5)
-# print(square.__doc__)
+def square(a):
+#  '''Takes in a number n, returns the square of n'''
+  print(a**2)
+square(5)
+print(square.__doc__)
 
 
-# #ENUMERATE
+#ENUMERATE
 
 
-# marks = [12,23,34,56,87,2]
+marks = [12,23,34,56,87,2]
 
-# #Before Enumerate
-# x=0
-# for mark in marks:
-#  print(mark)
-# if(x==3):
-#     print("Ayush")
-#     x = x+1
+#Before Enumerate
+x=0
+for mark in marks:
+ print(mark)
+if(x==3):
+    print("Ayush")
+    x = x+1
 
-# #After Enumerate
-# for x,mark in enumerate(marks):
-#  print(mark)
-# if(x==3):
-#     print("Ayush")
-#     x = x+1
+#After Enumerate
+for x,mark in enumerate(marks):
+ print(mark)
+if(x==3):
+    print("Ayush")
+    x = x+1
 
-# lst1=[[1,2,3,4,5,6]
-#       [7,8,9,10,11,12]]
 
-# lst2=[[13,14,15,16,17,18]
-#       [19,20,21,22,23,24]]
+#TASK BY NAVEEN
 
-# lst3=[[1,2,13,14,3,4]
-#       [15,16,5,6,17,18]]
 
-# lst4=[[7,8,19,20,9,10]
-#       [21,22,11,12,23,24]]
+lst1=[[1,2,3,4,5,6]
+      [7,8,9,10,11,12]]
+
+lst2=[[13,14,15,16,17,18]
+      [19,20,21,22,23,24]]
+
+lst3=[[1,2,13,14,3,4]
+      [15,16,5,6,17,18]]
+
+lst4=[[7,8,19,20,9,10]
+      [21,22,11,12,23,24]]
+
+
+#MULTIPLE FILES IN FOLDER
+
 
 import os
 
@@ -834,3 +842,5 @@ if(not os.path.exists("data")):
 
 for i in range(0,100):
     os.mkdir(f"data/Day{i+1}")
+
+#More such commands can be known through os modules in python on google
