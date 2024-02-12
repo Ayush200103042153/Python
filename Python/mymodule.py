@@ -13,4 +13,7 @@ def add(x,y):
 def sub(x,y):
         return x-y
 
-print(greeting("Ayush"))
+def welcome():
+    print("Hello! I AM AYUSH")
+if __name__=="__Python_practice__":
+    welcome()    
