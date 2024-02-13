@@ -918,6 +918,7 @@
 
 # #GETTER
 
+
 # class MyClass:
 #     def __init__(self,value):
 #         self._value=value
@@ -934,16 +935,33 @@
 # obj.show()
 
 
-# INSTANCE VS CLASS VARIABLE
+# # INSTANCE VS CLASS VARIABLE
+
+
+# class Employee:
+#     companyName="Apple" #ClassVariable
+#     def __init__(self,name):
+#         self.name=name
+#         self.raiseamt=3 #InstanceVariable
+
+#     def showdetails(self):
+#         print(f"The Name of Empolyee is {self.name} from {self.companyName} is raised by {self.raiseamt}")    
+
+# emp1=Employee("Ayush")
+# emp1.showdetails()    
+
+
+#CLASS METHODS
 
 class Employee:
-    companyName="Apple"
-    def __init__(self,name):
-        self.name=name
-        self.raiseamt=3
+    company="Apple"
+    def show(self):
+        print(f"The name is {self.name} and company is {self.company}")
 
-    def showdetails(self):
-        print(f"The Name of Empolyee is {self.name} from {self.companyName} is raised by {self.raiseamt}")    
-
-emp1=Employee("Ayush")
-emp1.showdetails()    
+    def changeCompany(cls,newCompany):
+            cls.company=newCompany
+e1=Employee()
+e1.name="Ayush"
+e1.show()
+e1.changeCompany("Telsa")
+e1.show()            
