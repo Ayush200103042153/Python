@@ -951,17 +951,139 @@
 # emp1.showdetails()    
 
 
-#CLASS METHODS
+# #CLASS METHODS
 
-class Employee:
-    company="Apple"
-    def show(self):
-        print(f"The name is {self.name} and company is {self.company}")
 
-    def changeCompany(cls,newCompany):
-            cls.company=newCompany
-e1=Employee()
-e1.name="Ayush"
-e1.show()
-e1.changeCompany("Telsa")
-e1.show()            
+# class Employee:
+#         company="Apple"
+#         def show(self):
+#             print(f"The name is {self.name} and company is {self.company}")
+
+#         def changeCompany(cls,newCompany):
+#                 cls.company=newCompany
+# e1=Employee()
+# e1.name="Ayush"
+# e1.show()
+# e1.changeCompany("Telsa")
+# e1.show()
+
+
+# #CLASS METHODS AS ALTERNATIVE CONSTRUCTOR
+
+
+# class Employee:
+#  def __init__(self,name ,salary):
+#               self.name = name
+#               self.salary = salary
+
+#  @classmethod
+#  def Str(cls,string):
+#   return cls(string.split("-")[0],string.split("-")[1])
+
+# e1=Employee("Ayush",25000)
+# print(e1.name)
+# print(e1.salary)
+
+# string="Ayush-65000"
+# e2=Employee.Str(string)
+# print(e2.name)
+# print(e2.salary)
+
+
+# #METHOD OVERRIDING
+
+
+# class Shape:
+#     def __init__(self,x,y):
+#         self.x=x
+#         self.y=y
+
+#     def area(self):
+#         return self.x*self.y
+        
+# class Circle(Shape):
+#               def __init__(self, r):
+#                     self.r=r
+#                     super().__init__(r,r)
+#               def area(self):
+#                     return 3.14*super().area()      
+# rec=Shape(3,5)
+# print(rec.area())
+
+# cir=Circle(5)
+# print(cir.area())
+
+
+# #OPERATOR OVERLOADIING
+
+
+# class Vector:
+#     def __init__(self,i,j,k):
+#         self.i=i
+#         self.j=j
+#         self.k=k
+
+#     def __str__(self):
+#         return f"{self.i}i + {self.j}j + {self.k}k"
+
+#     def __add__(self,x):
+#         return Vector(self.i+x.i,self.j+x.j,self.k+x.k)
+    
+# v1=Vector(3,5,6)
+# print(v1)
+
+# v2=Vector(1,3,5)
+# print(v2)
+
+# print(v1+v2)
+
+
+# #SINGLE INHERITANCE
+
+
+# class Animal:
+#     def __init__(self,name,species):
+#         self.name=name
+#         self.species=species
+#     def make_sound(self):
+#         print("Sound made by the Animal")
+
+# class Cat(Animal):
+#     def __init__(self, name, breed):
+#         Animal.__init__(self,name, species="Cat")
+#         self.breed=breed
+#     def make_sound(self):
+#         print("Meoww")    
+
+# c=Cat("Cat","Doremon")
+# c.make_sound()
+
+# a=Animal("Dog","Shiro")
+# a.make_sound()
+
+
+# #MULTIPLE INHERITANCE
+
+
+# class Employee:
+#     def __init__(self,name):
+#         self.name=name
+#     def show(self):
+#         print(f"The Name is {self.name}")    
+
+# class Dancer:
+#     def __init__(self,dance):
+#         self.dance=dance
+#     def show(self):
+#         print(f"The Dance is {self.dance}")
+
+# class DancerEmpolyee(Employee,Dancer):
+# # class DancerEmpolyee(Dancer,Employee):
+#     def __init__(self,dance,name):
+#         self.dance=dance
+#         self.name=name
+
+# o=DancerEmpolyee("Kathak","Ayush")
+# print(o.name)
+# print(o.dance)
+# o.show()
