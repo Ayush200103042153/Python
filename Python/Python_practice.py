@@ -1197,3 +1197,124 @@ gen = mygenerator()
 
 for j in gen:
     print(j)
+
+
+# MULTITHREADING
+    
+
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor
+
+#Indicates some task being done
+def func(seconds):
+   print(f"Sleeping for {seconds} seconds")
+   time.sleep(seconds)
+   return seconds
+
+time1=time.perf_counter()
+
+#Normal
+func(4)
+func(2)
+func(1)
+
+#Calculating Time
+time2=time.perf_counter()
+print(time2-time1)
+
+#Using Threading
+t1=threading.Thread(target=func, args=[4])
+t2=threading.Thread(target=func, args=[2])
+t3=threading.Thread(target=func, args=[1])
+
+time1=time.perf_counter()
+
+t1.start()
+t2.start()
+t3.start()
+
+t1.join()
+t2.join()
+t3.join()
+
+#Calculating Time
+time2=time.perf_counter()
+print(time2-time1)
+
+def poolingDemo():
+   with ThreadPoolExecutor() as executor:
+      future=executor.submit(func, 2,) #For Single Entry
+      print(future.result())
+      
+      l=[3,6,1,4]
+      results=executor.map(func,l) #For MultipleEntries
+      for result in results:
+        print(result) 
+
+poolingDemo()
+
+
+#ASYNIO
+
+
+import time
+import asyncio
+import requests
+
+
+async def function1():
+  URL = "https://instagram.com/favicon.ico"
+  response = requests.get(URL)
+  open("instagram1.ico", "wb").write(response.content)
+
+  # await asyncio.sleep(1)
+  # print("func 1")
+  return "Ayush"
+
+async def function2():
+  URL = "https://instagram.com/favicon.ico"
+  response = requests.get(URL)
+  open("instagram2.ico", "wb").write(response.content)
+
+  # await asyncio.sleep(1)
+  # print("func 2")
+  return "Reflexgod"
+
+async def function3():
+  URL = "https://instagram.com/favicon.ico"
+  response = requests.get(URL)
+  open("instagram3.ico", "wb").write(response.content)
+
+  # await asyncio.sleep(1)
+  # print("func 3")
+  return "Clutch"
+
+async def main():
+  L=await asyncio.gather(
+      function1(),
+      function2(),
+      function3(),
+  )
+  print(L)
+
+  # task=asyncio.create_task(function1())
+  # await function1()
+  # await function2()
+  # await function3()
+
+asyncio.run(main())      
+
+
+# #MULTIPROCESSING
+
+
+# import multiprocessing
+# import requests
+
+# def downloadFile(url,name):
+#     response=requests.get(url)
+#     open("instagram2.jpg"),"wb".write(response.conntent)
+#     pass
+
+# url="https://picsum.photos/200/300"
