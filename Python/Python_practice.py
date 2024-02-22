@@ -1306,15 +1306,28 @@ async def main():
 asyncio.run(main())      
 
 
-# #MULTIPROCESSING
+#MULTIPROCESSING
 
 
-# import multiprocessing
-# import requests
+import multiprocessing
+import requests
 
-# def downloadFile(url,name):
-#     response=requests.get(url)
-#     open("instagram2.jpg"),"wb".write(response.conntent)
-#     pass
+def downloadFile(url,name):
+    
+    print(f"Started Downloading {name}")
+    response=requests.get(url)
+    open(f"files/file {name}.jpg","wb").write(response.content)
+    print(f"Finished Downloadin {name}")
 
-# url="https://picsum.photos/200/300"
+if __name__ == "__main__":
+ url="https://picsum.photos/200/300"
+ pros=[]
+ for i in range(5):
+    downloadFile(url,i)
+    p=multiprocessing.Process(target=downloadFile,args=[url,i])
+    p.start()
+    pros.append(p)
+
+for p in pros:
+        p.join()
+        
